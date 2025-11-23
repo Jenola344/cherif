@@ -1,3 +1,316 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A beautifully decorated modern living room with art on the wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1708113388262-17fdf0e21205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBsaXZpbmdyb29tfGVufDB8fHx8MTc2Mzc4OTk1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern livingroom"
+    },
+    {
+      "id": "about-us-image",
+      "description": "An artist's studio with canvases and paint.",
+      "imageUrl": "https://images.unsplash.com/photo-1534511902651-6ab0ce131f2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnRpc3QlMjBzdHVkaW98ZW58MHx8fHwxNzYzODI1MTc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artist studio"
+    },
+    {
+      "id": "our-service-image",
+      "description": "Close up of a paint brush on a colorful canvas.",
+      "imageUrl": "https://images.unsplash.com/photo-1625931799744-b1c77f1694d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYWludCUyMGJydXNofGVufDB8fHx8MTc2Mzg2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paint brush"
+    },
+    {
+      "id": "modern-1",
+      "description": "Abstract shapes in neutral tones",
+      "imageUrl": "https://images.unsplash.com/photo-1626544827763-d516dce335e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YWJzdHJhY3QlMjBzaGFwZXN8ZW58MHx8fHwxNzYzODQ5NzUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract shapes"
+    },
+    {
+      "id": "modern-2",
+      "description": "A single black line on a white canvas",
+      "imageUrl": "https://images.unsplash.com/photo-1581885465837-786fbc7b9e6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWluaW1hbGlzdCUyMGxpbmV8ZW58MHx8fHwxNzYzODY3NTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist line"
+    },
+    {
+      "id": "modern-3",
+      "description": "Geometric composition with primary colors",
+      "imageUrl": "https://images.unsplash.com/photo-1723056659309-35e22a439a78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnZW9tZXRyaWMlMjBjb21wb3NpdGlvbnxlbnwwfHx8fDE3NjM4Njc1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "geometric composition"
+    },
+    {
+      "id": "modern-4",
+      "description": "Textured white plaster art",
+      "imageUrl": "https://images.unsplash.com/photo-1673341404902-b4bb33afae4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZXh0dXJlZCUyMGFydHxlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "textured art"
+    },
+    {
+      "id": "modern-5",
+      "description": "A serene, minimalist seascape",
+      "imageUrl": "https://images.unsplash.com/photo-1761895019545-c58de2b6636c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtaW5pbWFsaXN0JTIwc2Vhc2NhcGV8ZW58MHx8fHwxNzYzODAwNTI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist seascape"
+    },
+    {
+      "id": "frames-1",
+      "description": "A set of three wall frames in a modern living room",
+      "imageUrl": "https://images.unsplash.com/photo-1667141593852-d312950cab0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3YWxsJTIwZnJhbWVzfGVufDB8fHx8MTc2Mzg2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wall frames"
+    },
+    {
+      "id": "frames-2",
+      "description": "Two large vertical frames above a sofa",
+      "imageUrl": "https://images.unsplash.com/photo-1614747232270-c59cdf8fd38f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2ZXJ0aWNhbCUyMGZyYW1lc3xlbnwwfHx8fDE3NjM4Njc1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vertical frames"
+    },
+    {
+      "id": "frames-3",
+      "description": "A single large statement frame in a hallway",
+      "imageUrl": "https://images.unsplash.com/photo-1760446032123-f66e0c7a005b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzdGF0ZW1lbnQlMjBmcmFtZXxlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "statement frame"
+    },
+    {
+      "id": "frames-4",
+      "description": "A gallery wall of black frames with monochrome prints",
+      "imageUrl": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnYWxsZXJ5JTIwd2FsbHxlbnwwfHx8fDE3NjM4MTgyNTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gallery wall"
+    },
+    {
+      "id": "african-1",
+      "description": "A colorful portrait of an African woman",
+      "imageUrl": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhZnJpY2FuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzODY3NTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "african portrait"
+    },
+    {
+      "id": "african-2",
+      "description": "Abstract tribal patterns in earthy tones",
+      "imageUrl": "https://images.unsplash.com/photo-1759742268946-8a145d543ac4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmliYWwlMjBwYXR0ZXJuc3xlbnwwfHx8fDE3NjM4Njc1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tribal patterns"
+    },
+    {
+      "id": "african-3",
+      "description": "A vibrant marketplace scene",
+      "imageUrl": "https://images.unsplash.com/photo-1606824722920-4c652a70f348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYXJrZXQlMjBzY2VuZXxlbnwwfHx8fDE3NjM4MDk2MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "market scene"
+    },
+    {
+      "id": "african-4",
+      "description": "Silhouette of acacia trees at sunset",
+      "imageUrl": "https://images.unsplash.com/photo-1676984029604-748385dcd3ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhY2FjaWElMjB0cmVlc3xlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "acacia trees"
+    },
+    {
+      "id": "african-5",
+      "description": "Contemporary sculpture with African motifs",
+      "imageUrl": "https://images.unsplash.com/photo-1633949840687-c9d9e0ca7892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZnJpY2FuJTIwc2N1bHB0dXJlfGVufDB8fHx8MTc2Mzg2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "african sculpture"
+    },
+    {
+      "id": "e-asian-1",
+      "description": "Japanese ink wash landscape painting",
+      "imageUrl": "https://images.unsplash.com/photo-1762114974446-385ed570b26e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxpbmslMjB3YXNofGVufDB8fHx8MTc2MzgwMzYwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ink wash"
+    },
+    {
+      "id": "e-asian-2",
+      "description": "Chinese calligraphy scroll",
+      "imageUrl": "https://images.unsplash.com/photo-1763225600616-23af4dad3f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYWxsaWdyYXBoeSUyMHNjcm9sbHxlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "calligraphy scroll"
+    },
+    {
+      "id": "e-asian-3",
+      "description": "Korean folding screen with nature motifs",
+      "imageUrl": "https://images.unsplash.com/photo-1661523720305-2a1e6c3df3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb2xkaW5nJTIwc2NyZWVufGVufDB8fHx8MTc2Mzg2NzUwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "folding screen"
+    },
+    {
+      "id": "e-asian-4",
+      "description": "A print of a Great Wave",
+      "imageUrl": "https://images.unsplash.com/photo-1762281089490-cd54a24f27af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3YXZlJTIwcHJpbnR8ZW58MHx8fHwxNzYzODY3NTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wave print"
+    },
+    {
+      "id": "sketch-1",
+      "description": "Charcoal portrait study",
+      "imageUrl": "https://images.unsplash.com/photo-1698142477387-20a2e02008ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGFyY29hbCUyMHBvcnRyYWl0fGVufDB8fHx8MTc2Mzg2NzUwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "charcoal portrait"
+    },
+    {
+      "id": "sketch-2",
+      "description": "Pencil sketch of an old building",
+      "imageUrl": "https://images.unsplash.com/photo-1717445307996-5c494d77a6ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcmNoaXRlY3R1cmFsJTIwc2tldGNofGVufDB8fHx8MTc2Mzg2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "architectural sketch"
+    },
+    {
+      "id": "sketch-3",
+      "description": "Ink drawing of a botanical subject",
+      "imageUrl": "https://images.unsplash.com/photo-1726345876674-a9b8cd976e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxib3RhbmljYWwlMjBkcmF3aW5nfGVufDB8fHx8MTc2Mzg2NzUwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "botanical drawing"
+    },
+    {
+      "id": "sketch-4",
+      "description": "Pastel sketch of a landscape",
+      "imageUrl": "https://images.unsplash.com/photo-1676607185648-53307a4d5b2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYW5kc2NhcGUlMjBza2V0Y2h8ZW58MHx8fHwxNzYzODY3NTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "landscape sketch"
+    },
+    {
+      "id": "sketch-5",
+      "description": "A figure drawing in conte crayon",
+      "imageUrl": "https://images.unsplash.com/photo-1747764968359-2b78b707fa56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaWd1cmUlMjBkcmF3aW5nfGVufDB8fHx8MTc2Mzg2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "figure drawing"
+    },
+    {
+      "id": "m-eastern-1",
+      "description": "Intricate blue and white Islamic tile pattern",
+      "imageUrl": "https://images.unsplash.com/photo-1716813781135-fe2cb541e03e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpc2xhbWljJTIwdGlsZXxlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "islamic tile"
+    },
+    {
+      "id": "m-eastern-2",
+      "description": "Arabic calligraphy in gold leaf",
+      "imageUrl": "https://images.unsplash.com/photo-1603520781806-dbedf904bf32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcmFiaWMlMjBjYWxsaWdyYXBoeXxlbnwwfHx8fDE3NjM4Mjg3OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "arabic calligraphy"
+    },
+    {
+      "id": "m-eastern-3",
+      "description": "A painting of a desert caravan",
+      "imageUrl": "https://images.unsplash.com/photo-1559292689-3c2399e50048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZXNlcnQlMjBjYXJhdmFufGVufDB8fHx8MTc2Mzg2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "desert caravan"
+    },
+    {
+      "id": "m-eastern-4",
+      "description": "Geometric patterns from a Persian rug",
+      "imageUrl": "https://images.unsplash.com/photo-1588421874990-1fe162747f9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzaWFuJTIwcnVnfGVufDB8fHx8MTc2Mzg1NDgzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "persian rug"
+    },
+    {
+      "id": "photo-1",
+      "description": "Black and white photo of a city street",
+      "imageUrl": "https://images.unsplash.com/photo-1466500419182-8602dc906b51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaXR5JTIwc3RyZWV0fGVufDB8fHx8MTc2Mzg2NjUwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city street"
+    },
+    {
+      "id": "photo-2",
+      "description": "Color photograph of a misty forest",
+      "imageUrl": "https://images.unsplash.com/photo-1476362555312-ab9e108a0b7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaXN0eSUyMGZvcmVzdHxlbnwwfHx8fDE3NjM4Njc1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "misty forest"
+    },
+    {
+      "id": "photo-3",
+      "description": "An aerial beach photograph",
+      "imageUrl": "https://images.unsplash.com/photo-1613153262489-bc7a4e6f28c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZXJpYWwlMjBiZWFjaHxlbnwwfHx8fDE3NjM3NjQ2MzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "aerial beach"
+    },
+    {
+      "id": "photo-4",
+      "description": "A close-up portrait with dramatic lighting",
+      "imageUrl": "https://images.unsplash.com/photo-1675430663473-8f82a1fca63b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkcmFtYXRpYyUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MzgwNzAwMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dramatic portrait"
+    },
+    {
+      "id": "photo-5",
+      "description": "Long exposure of a waterfall",
+      "imageUrl": "https://images.unsplash.com/photo-1717008236999-26cdf9024648?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YXRlcmZhbGwlMjBsb25nLWV4cG9zdXJlfGVufDB8fHx8MTc2Mzg2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "waterfall long-exposure"
+    },
+    {
+      "id": "photo-6",
+      "description": "Minimalist architecture photography",
+      "imageUrl": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2Mzc5OTMyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist architecture"
+    },
+    {
+      "id": "abstract-1",
+      "description": "A large canvas with splashes of bright paint",
+      "imageUrl": "https://images.unsplash.com/photo-1619963258837-b83f3406cfcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwYWludCUyMHNwbGFzaHxlbnwwfHx8fDE3NjM3ODc0ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paint splash"
+    },
+    {
+      "id": "abstract-2",
+      "description": "A color field painting with shades of red",
+      "imageUrl": "https://images.unsplash.com/photo-1623927342879-461a6a53e0f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2xvciUyMGZpZWxkfGVufDB8fHx8MTc2Mzg2NzUwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "color field"
+    },
+    {
+      "id": "abstract-3",
+      "description": "A textured abstract work with thick impasto",
+      "imageUrl": "https://images.unsplash.com/photo-1673118121742-13425ba31701?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aW1wYXN0byUyMHRleHR1cmV8ZW58MHx8fHwxNzYzODY3NTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "impasto texture"
+    },
+    {
+      "id": "abstract-4",
+      "description": "A fluid abstract painting with resin",
+      "imageUrl": "https://images.unsplash.com/photo-1663121428718-04c60f1fb2e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyZXNpbiUyMGFydHxlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "resin art"
+    },
+    {
+      "id": "abstract-5",
+      "description": "A gestural abstract black and white painting",
+      "imageUrl": "https://images.unsplash.com/photo-1762264643034-3ed18de18035?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnZXN0dXJhbCUyMGFic3RyYWN0fGVufDB8fHx8MTc2Mzg2NzUwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gestural abstract"
+    },
+    {
+      "id": "decor-1",
+      "description": "A stylish ceramic vase on a wooden table",
+      "imageUrl": "https://images.unsplash.com/photo-1631125915732-b98f8774f675?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjZXJhbWljJTIwdmFzZXxlbnwwfHx8fDE3NjM3OTY1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ceramic vase"
+    },
+    {
+      "id": "decor-2",
+      "description": "A set of sculptural candles",
+      "imageUrl": "https://images.unsplash.com/photo-1736124708831-e5aeadd20d8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2N1bHB0dXJhbCUyMGNhbmRsZXN8ZW58MHx8fHwxNzYzODY3NTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sculptural candles"
+    },
+    {
+      "id": "decor-3",
+      "description": "An artisanal woven wall hanging",
+      "imageUrl": "https://images.unsplash.com/photo-1632393121391-3c40fcfafe1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3YWxsJTIwaGFuZ2luZ3xlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wall hanging"
+    },
+    {
+      "id": "limited-1",
+      "description": "A signed print of a famous photograph",
+      "imageUrl": "https://images.unsplash.com/photo-1746897785383-7c03ff567075?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaWduZWQlMjBwcmludHxlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "signed print"
+    },
+    {
+      "id": "limited-2",
+      "description": "An exclusive giclee print from a digital artist",
+      "imageUrl": "https://images.unsplash.com/photo-1527239441953-caffd968d952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnaWNsZWUlMjBwcmludHxlbnwwfHx8fDE3NjM4Njc1MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "giclee print"
+    },
+    {
+      "id": "limited-3",
+      "description": "A screenprint by a renowned street artist",
+      "imageUrl": "https://images.unsplash.com/photo-1517776832751-0a7e6993de03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdHJlZXQlMjBhcnR8ZW58MHx8fHwxNzYzODYwNjkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "street art"
+    },
+    {
+      "id": "limited-4",
+      "description": "A small batch woodblock print",
+      "imageUrl": "https://images.unsplash.com/photo-1713107101613-a50a39c88c26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b29kYmxvY2slMjBwcmludHxlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woodblock print"
+    },
+    {
+      "id": "service-art-1",
+      "description": "Abstract painting with blue and gold.",
+      "imageUrl": "https://images.unsplash.com/photo-1541512416146-3cf58d6b27cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhYnN0cmFjdCUyMHBhaW50aW5nfGVufDB8fHx8MTc2Mzg2MjMzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract painting"
+    },
+    {
+      "id": "service-art-2",
+      "description": "Minimalist black and white drawing.",
+      "imageUrl": "https://images.unsplash.com/photo-1618514951866-efc95de03f37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtaW5pbWFsaXN0JTIwZHJhd2luZ3xlbnwwfHx8fDE3NjM4Njc1MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist drawing"
+    },
+    {
+      "id": "service-art-3",
+      "description": "African contemporary portrait.",
+      "imageUrl": "https://images.unsplash.com/photo-1523824921871-d6f1a15151f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhZnJpY2FuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzODY3NTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "african portrait"
+    },
+    {
+      "id": "service-art-4",
+      "description": "Middle Eastern geometric patterns.",
+      "imageUrl": "https://images.unsplash.com/photo-1628160634750-a81a2a780805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnZW9tZXRyaWMlMjBwYXR0ZXJufGVufDB8fHx8MTc2Mzc4OTM5NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "geometric pattern"
+    }
+  ]
 }
