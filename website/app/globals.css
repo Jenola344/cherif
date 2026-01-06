@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-lato);
+}
+
+/* Base Variables */
+:root {
+  /* Brown & Beige Palette */
+  --background: #F9F7F2;
+  /* Light Cream/Beige */
+  --foreground: #3E2B22;
+  /* Dark Brown Text */
+
+  --primary: #5A3E32;
+  /* Rich Brown */
+  --primary-foreground: #F9F7F2;
+
+  --secondary: #D8C6AC;
+  /* Soft Beige */
+  --secondary-foreground: #3E2B22;
+
+  --muted: #EBE5D9;
+  /* Muted Beige */
+  --muted-foreground: #6B5D55;
+
+  --border: #D8C6AC;
+  --input: #EBE5D9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode: Deep Browns */
+    --background: #2C1E18;
+    --foreground: #F9F7F2;
+
+    --primary: #D8C6AC;
+    /* Beige as primary in dark mode */
+    --primary-foreground: #2C1E18;
+
+    --secondary: #5A3E32;
+    --secondary-foreground: #F9F7F2;
+
+    --muted: #3E2B22;
+    --muted-foreground: #A89B93;
+
+    --border: #5A3E32;
+    --input: #3E2B22;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
