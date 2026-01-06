@@ -43,7 +43,7 @@ export default function ProductCard({ id, slug, title, imageUrl, category, price
                 <Link href={`/gallery/${slug}`}>
                     <h3 className="font-display font-bold text-lg mb-1 group-hover:text-primary transition-colors">{title}</h3>
                 </Link>
-                <p className="text-primary font-bold text-xl">${price}</p>
+                <p className="text-primary font-bold text-xl">₦{price}</p>
             </div>
         </div>
     );

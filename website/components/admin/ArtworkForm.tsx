@@ -54,8 +54,8 @@ export default function ArtworkForm({ categories }: { categories: Category[] }) 
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="space-y-2 lg:col-span-2">
-                    <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Image URL (Unsplash/Picsum)</label>
-                    <input name="imageUrl" required className="w-full bg-muted/30 border-none rounded-xl p-4 text-sm focus:ring-2 ring-primary/20" placeholder="https://images.unsplash.com/..." />
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Artwork Image (Cloudinary)</label>
+                    <input name="image" type="file" required className="w-full bg-muted/30 border-none rounded-xl p-4 text-sm focus:ring-2 ring-primary/20 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-bold file:bg-primary file:text-white file:uppercase file:tracking-widest" />
                 </div>
                 <div className="space-y-2">
                     <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Base Price (USD)</label>

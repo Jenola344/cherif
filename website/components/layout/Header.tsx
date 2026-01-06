@@ -2,15 +2,16 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ShoppingCart, Menu, X, Search } from 'lucide-react';
+import { ShoppingCart, Menu, X, Search, User } from 'lucide-react';
 import { useState } from 'react';
 import Logo from '@/components/Logo';
 import { useCart } from '@/context/CartContext';
+import { useSession, signOut } from 'next-auth/react';
 
 const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/gallery', label: 'Gallery' },
-    { href: '/our-service', label: 'Our Service' },
+    { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
 ];
@@ -19,6 +20,7 @@ export default function Header() {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { totalItems } = useCart();
+    const { data: session } = useSession();
 
     return (
         <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
@@ -43,7 +45,20 @@ export default function Header() {
 
                 {/* Actions */}
                 <div className="flex items-center space-x-5">
-                    <button className="text-muted-foreground hover:text-primary transition-colors">
+                    <div className="hidden lg:flex items-center bg-muted/30 rounded-full px-4 py-2 border border-border/50 focus-within:border-primary/30 transition-all">
+                        <Search className="h-4 w-4 text-muted-foreground mr-2" />
+                        <input
+                            type="text"
+                            placeholder="Search artworks..."
+                            className="bg-transparent border-none text-xs focus:ring-0 w-32 focus:w-48 transition-all"
+                            onKeyDown={(e) => {
+                                if (e.key === 'Enter') {
+                                    window.location.href = `/gallery?search=${(e.target as HTMLInputElement).value}`;
+                                }
+                            }}
+                        />
+                    </div>
+                    <button className="lg:hidden text-muted-foreground hover:text-primary transition-colors">
                         <Search className="h-5 w-5" />
                     </button>
                     <Link href="/cart" className="relative text-muted-foreground hover:text-primary transition-colors">
@@ -54,6 +69,21 @@ export default function Header() {
                             </span>
                         )}
                     </Link>
+
+                    {session ? (
+                        <div className="flex items-center space-x-4">
+                            <Link href="/profile" className="text-muted-foreground hover:text-primary transition-colors">
+                                <User className="h-5 w-5" />
+                            </Link>
+                            {(session?.user as any)?.isAdmin && (
+                                <Link href="/admin" className="text-[10px] font-bold uppercase tracking-widest bg-primary/10 text-primary px-3 py-1 rounded-full border border-primary/20 hidden lg:block"> Admin </Link>
+                            )}
+                        </div>
+                    ) : (
+                        <Link href="/login" className="text-xs font-bold uppercase tracking-widest text-primary hover:text-primary/80 transition-colors">
+                            Sign In
+                        </Link>
+                    )}
 
                     <button
                         className="md:hidden text-primary"

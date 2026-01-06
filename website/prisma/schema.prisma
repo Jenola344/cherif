@@ -11,6 +11,7 @@ model User {
   id        String   @id @default(uuid())
   email     String   @unique
   name      String?
+  password  String?
   isAdmin   Boolean  @default(false)
   createdAt DateTime @default(now())
   orders    Order[]
@@ -40,6 +41,8 @@ model Artwork {
   createdAt      DateTime    @default(now())
   updatedAt      DateTime    @updatedAt
   orderItems     OrderItem[]
+
+  @@index([categoryId])
 }
 
 model Order {
@@ -53,6 +56,9 @@ model Order {
   userId        String?
   user          User?       @relation(fields: [userId], references: [id])
   items         OrderItem[]
+
+  @@index([userId])
+  @@index([status])
 }
 
 model OrderItem {

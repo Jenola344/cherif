@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import placeholderData from '../lib/placeholder-images.json';
+import bcrypt from 'bcryptjs';
 
 const prisma = new PrismaClient();
 
@@ -19,6 +20,18 @@ async function main() {
     await prisma.order.deleteMany();
     await prisma.artwork.deleteMany();
     await prisma.category.deleteMany();
+    await prisma.user.deleteMany();
+
+    // Create Admin User
+    const hashedPassword = await bcrypt.hash('admin123', 10);
+    await prisma.user.create({
+        data: {
+            email: 'admin@cherif.com',
+            name: 'Cherif Admin',
+            password: hashedPassword,
+            isAdmin: true
+        }
+    });
 
     // Create Categories
     for (const c of categories) {

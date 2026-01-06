@@ -28,7 +28,7 @@ export default async function AdminDashboard() {
     const cards = [
         { label: 'Total Artworks', value: stats.artworks, icon: Palette, color: 'text-blue-600', bg: 'bg-blue-50' },
         { label: 'Total Orders', value: stats.orders, icon: ShoppingCart, color: 'text-green-600', bg: 'bg-green-50' },
-        { label: 'Total Revenue', value: `$${stats.revenue.toLocaleString()}`, icon: TrendingUp, color: 'text-amber-600', bg: 'bg-amber-50' },
+        { label: 'Total Revenue', value: `₦${stats.revenue.toLocaleString()}`, icon: TrendingUp, color: 'text-amber-600', bg: 'bg-amber-50' },
         { label: 'Active Collectors', value: '12', icon: Users, color: 'text-purple-600', bg: 'bg-purple-50' },
     ];
 

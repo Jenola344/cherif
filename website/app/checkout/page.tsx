@@ -108,7 +108,7 @@ export default function CheckoutPage() {
                             >
                                 {loading ? "Processing..." : (
                                     <>
-                                        <Lock className="h-4 w-4 mr-2" /> Pay ${totalPrice} Securely
+                                        <Lock className="h-4 w-4 mr-2" /> Pay ₦{totalPrice} Securely
                                     </>
                                 )}
                             </button>
@@ -133,7 +133,7 @@ export default function CheckoutPage() {
                                         <div>
                                             <h4 className="font-bold text-sm mb-1">{item.title}</h4>
                                             <p className="text-[10px] text-muted-foreground uppercase">{item.size} • {item.frame}</p>
-                                            <p className="text-xs font-bold mt-1 text-primary">{item.quantity} x ${item.price}</p>
+                                            <p className="text-xs font-bold mt-1 text-primary">{item.quantity} x ₦{item.price}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -142,7 +142,7 @@ export default function CheckoutPage() {
                             <div className="space-y-4 border-t border-border pt-8">
                                 <div className="flex justify-between text-sm text-muted-foreground uppercase tracking-widest font-bold">
                                     <span>Subtotal</span>
-                                    <span>${totalPrice}</span>
+                                    <span>₦{totalPrice}</span>
                                 </div>
                                 <div className="flex justify-between text-sm text-muted-foreground uppercase tracking-widest font-bold">
                                     <span>Shipping</span>
@@ -150,7 +150,7 @@ export default function CheckoutPage() {
                                 </div>
                                 <div className="flex justify-between text-2xl font-display font-bold text-primary pt-4">
                                     <span>Total</span>
-                                    <span>${totalPrice}</span>
+                                    <span>₦{totalPrice}</span>
                                 </div>
                             </div>
                         </div>
