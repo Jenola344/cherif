@@ -16,9 +16,9 @@ export default function Footer() {
                     <div>
                         <h4 className="font-display text-lg font-bold mb-6">Gallery</h4>
                         <ul className="space-y-4 text-sm text-muted-foreground">
-                            <li><Link href="/gallery/modern" className="hover:text-primary transition-colors">Modern Minimalist</Link></li>
-                            <li><Link href="/gallery/african" className="hover:text-primary transition-colors">Contemporary African</Link></li>
-                            <li><Link href="/gallery/photography" className="hover:text-primary transition-colors">Fine Art Photography</Link></li>
+                            <li><Link href="/gallery?category=cat-1" className="hover:text-primary transition-colors">Modern Minimalist</Link></li>
+                            <li><Link href="/gallery?category=cat-3" className="hover:text-primary transition-colors">Contemporary African</Link></li>
+                            <li><Link href="/gallery?category=cat-5" className="hover:text-primary transition-colors">Drawings & Sketches</Link></li>
                         </ul>
                     </div>
 
