@@ -15,12 +15,12 @@ const ArtworkStyleTransferInputSchema = z.object({
   roomImage: z
     .string()
     .describe(
-      'A picture of the user’s room, as a data URI that must include a MIME type and use Base64 encoding. Expected format: \'data:<mimetype>;base64,<encoded_data>\'.'
+      "A picture of the user’s room, as a data URI that must include a MIME type and use Base64 encoding. Expected format: 'data:<mimetype>;base64,<encoded_data>'."
     ),
   artworkImage: z
     .string()
     .describe(
-      'A picture of the artwork, as a data URI that must include a MIME type and use Base64 encoding. Expected format: \'data:<mimetype>;base64,<encoded_data>\'.'
+      "A picture of the artwork, as a data URI that must include a MIME type and use Base64 encoding. Expected format: 'data:<mimetype>;base64,<encoded_data>'."
     ),
 });
 export type ArtworkStyleTransferInput = z.infer<typeof ArtworkStyleTransferInputSchema>;
