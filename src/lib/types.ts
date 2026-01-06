@@ -21,7 +21,7 @@ export type Category = {
 };
 
 export type CartItem = {
-  id: string; // This will be a unique ID for the cart item, e.g., artworkId-size-frame
+  id: string;
   artworkId: string;
   title: string;
   imageUrl: string;
@@ -31,3 +31,37 @@ export type CartItem = {
   price: number;
   quantity: number;
 };
+
+export type Order = {
+  id: string;
+  customerName: string;
+  customerEmail: string;
+  totalAmount: number;
+  status: 'PENDING' | 'PAID' | 'SHIPPED' | 'DELIVERED';
+  items: OrderItem[];
+  createdAt: Date;
+}
+
+export type OrderItem = {
+  artworkId: string;
+  size: string;
+  price: number;
+  quantity: number;
+}
+
+export type InteriorDesign = {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+}
+
+export type Booking = {
+  id: string;
+  customerName: string;
+  email: string;
+  serviceType: string;
+  message: string;
+  dateRequested: Date;
+  status: 'PENDING' | 'CONFIRMED';
+}

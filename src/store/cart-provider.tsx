@@ -21,28 +21,9 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const [items, setItems] = useState<CartItem[]>([]);
   const { toast } = useToast();
 
-  useEffect(() => {
-    try {
-      const storedCart = localStorage.getItem(CART_STORAGE_KEY);
-      if (storedCart) {
-        setItems(JSON.parse(storedCart));
-      }
-    } catch (error) {
-      console.error("Could not load cart from localStorage", error);
-    }
-  }, []);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(items));
-    } catch (error) {
-      console.error("Could not save cart to localStorage", error);
-    }
-  }, [items]);
-
   const addToCart = useCallback((newItem: Omit<CartItem, 'quantity' | 'id'>) => {
     const cartItemId = `${newItem.artworkId}-${newItem.size}-${newItem.frame}`;
-    
+
     setItems(prevItems => {
       const existingItem = prevItems.find(item => item.id === cartItemId);
 
@@ -85,7 +66,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const clearCart = useCallback(() => {
     setItems([]);
   }, []);
-  
+
   const cartTotal = items.reduce((total, item) => total + item.price * item.quantity, 0);
 
   return (

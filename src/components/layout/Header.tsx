@@ -21,13 +21,15 @@ const navLinks = [
 
 const Header = () => {
   const pathname = usePathname();
-  const { items } = useCart();
+  // const { items } = useCart();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [cartItemCount, setCartItemCount] = useState(0);
 
+  /*
   useEffect(() => {
     setCartItemCount(items.reduce((acc, item) => acc + item.quantity, 0));
   }, [items]);
+  */
 
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/50">
@@ -54,7 +56,7 @@ const Header = () => {
             <Link href="/cart">
               <ShoppingCart className="h-5 w-5" />
               {cartItemCount > 0 && (
-                 <Badge variant="destructive" className="absolute -top-2 -right-2 h-5 w-5 justify-center p-0 text-xs rounded-full bg-primary text-primary-foreground">{cartItemCount}</Badge>
+                <Badge variant="destructive" className="absolute -top-2 -right-2 h-5 w-5 justify-center p-0 text-xs rounded-full bg-primary text-primary-foreground">{cartItemCount}</Badge>
               )}
               <span className="sr-only">Shopping Cart</span>
             </Link>
