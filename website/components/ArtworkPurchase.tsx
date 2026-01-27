@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { ShoppingCart, Check } from 'lucide-react';
+import { ShoppingCart, Check, Lock } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 interface ArtworkPurchaseProps {
     artwork: {
@@ -19,12 +21,19 @@ export default function ArtworkPurchase({ artwork }: ArtworkPurchaseProps) {
     const [selectedSize, setSelectedSize] = useState(artwork.availableSizes[0]);
     const [selectedFrame, setSelectedFrame] = useState('none');
     const [isAdding, setIsAdding] = useState(false);
+    const { data: session } = useSession();
+    const router = useRouter();
 
     const price = artwork.prices[selectedSize] || 0;
     const framePrice = selectedFrame === 'wood' ? 50 : selectedFrame === 'black' ? 40 : 0;
     const totalPrice = price + framePrice;
 
     const handleAddToCart = () => {
+        if (!session) {
+            router.push('/login?callback=' + window.location.pathname);
+            return;
+        }
+
         setIsAdding(true);
         addToCart({
             artworkId: artwork.id,
@@ -47,8 +56,8 @@ export default function ArtworkPurchase({ artwork }: ArtworkPurchaseProps) {
                             key={size}
                             onClick={() => setSelectedSize(size)}
                             className={`py-3 px-4 border text-sm font-medium transition-all ${selectedSize === size
-                                    ? 'border-primary bg-primary text-white shadow-lg shadow-primary/20'
-                                    : 'border-border bg-white text-muted-foreground hover:border-primary/30'
+                                ? 'border-primary bg-primary text-white shadow-lg shadow-primary/20'
+                                : 'border-border bg-white text-muted-foreground hover:border-primary/30'
                                 }`}
                         >
                             {size}
@@ -69,8 +78,8 @@ export default function ArtworkPurchase({ artwork }: ArtworkPurchaseProps) {
                             key={frame.id}
                             onClick={() => setSelectedFrame(frame.id)}
                             className={`w-full flex justify-between items-center p-4 border transition-all ${selectedFrame === frame.id
-                                    ? 'border-primary bg-primary/5'
-                                    : 'border-border bg-white hover:border-primary/20'
+                                ? 'border-primary bg-primary/5'
+                                : 'border-border bg-white hover:border-primary/20'
                                 }`}
                         >
                             <div className="flex items-center">
@@ -81,7 +90,7 @@ export default function ArtworkPurchase({ artwork }: ArtworkPurchaseProps) {
                                 <span className="text-sm font-medium">{frame.label}</span>
                             </div>
                             <span className="text-xs font-bold">
-                                {frame.price === 0 ? 'FREE' : `+$${frame.price}`}
+                                {frame.price === 0 ? 'FREE' : `+₦${frame.price}`}
                             </span>
                         </button>
                     ))}
@@ -91,7 +100,7 @@ export default function ArtworkPurchase({ artwork }: ArtworkPurchaseProps) {
             <div className="pt-6 border-t border-border flex items-end justify-between">
                 <div>
                     <span className="text-xs text-muted-foreground uppercase tracking-widest block mb-1">Total Price</span>
-                    <span className="text-4xl font-display font-bold text-primary">${totalPrice}</span>
+                    <span className="text-4xl font-display font-bold text-primary">₦{totalPrice}</span>
                 </div>
                 <button
                     onClick={handleAddToCart}

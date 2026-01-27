@@ -33,13 +33,13 @@ export default async function Home() {
           <h1 className="text-5xl md:text-8xl font-display font-bold text-white mb-8 tracking-tighter leading-none animate-in fade-in slide-in-from-bottom-8 duration-1000">
             Where Art Meets <br /> Modern Luxury
           </h1>
-          <p className="text-muted text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90 font-light animate-in fade-in slide-in-from-bottom-12 duration-1000">
+          <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90 font-light animate-in fade-in slide-in-from-bottom-12 duration-1000">
             Discover a curated collection of contemporary masterpieces and bespoke interior designs tailored for the discerning eye.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-16 duration-1000">
             <Link
               href="/gallery"
-              className="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest transition-all hover:scale-105 active:scale-95 flex items-center group"
+              className="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest transition-all hover:scale-105 active:scale-95 flex items-center"
             >
               Explore Collection
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

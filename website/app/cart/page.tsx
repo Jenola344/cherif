@@ -96,7 +96,7 @@ export default function CartPage() {
                                             </button>
                                         </div>
                                         <span className="text-xl font-display font-bold text-primary">
-                                            ${item.price * item.quantity}
+                                            ₦{item.price * item.quantity}
                                         </span>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@ export default function CartPage() {
                             <div className="space-y-4 mb-8">
                                 <div className="flex justify-between items-center text-sm">
                                     <span className="text-muted-foreground">Subtotal</span>
-                                    <span className="font-bold font-display text-lg">${totalPrice}</span>
+                                    <span className="font-bold font-display text-lg">₦{totalPrice}</span>
                                 </div>
                                 <div className="flex justify-between items-center text-sm">
                                     <span className="text-muted-foreground">Shipping</span>
@@ -127,7 +127,7 @@ export default function CartPage() {
                             <div className="border-t border-border pt-6 mb-10">
                                 <div className="flex justify-between items-center mb-2">
                                     <span className="text-lg font-bold">Total</span>
-                                    <span className="text-3xl font-display font-bold text-primary">${totalPrice}</span>
+                                    <span className="text-3xl font-display font-bold text-primary">₦{totalPrice}</span>
                                 </div>
                                 <p className="text-[10px] text-muted-foreground uppercase tracking-wider italic font-light">
                                     Tax included in displayed prices

@@ -38,7 +38,7 @@ export default async function AdminArtworksPage() {
                         </tr>
                     </thead>
                     <tbody className="divide-y divide-border/50">
-                        {artworks.map((art) => (
+                        {artworks.map((art: any) => (
                             <tr key={art.id} className="hover:bg-muted/10 transition-colors">
                                 <td className="p-6">
                                     <div className="flex items-center space-x-4">

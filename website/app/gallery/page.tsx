@@ -4,10 +4,20 @@ import Link from 'next/link';
 
 export const dynamic = 'force-dynamic';
 
-async function getArtworks(categoryId?: string) {
+async function getArtworks(categoryId?: string, searchTerm?: string) {
     try {
         return await prisma.artwork.findMany({
-            where: categoryId ? { categoryId } : {},
+            where: {
+                AND: [
+                    categoryId ? { categoryId } : {},
+                    searchTerm ? {
+                        OR: [
+                            { title: { contains: searchTerm } },
+                            { description: { contains: searchTerm } }
+                        ]
+                    } : {}
+                ]
+            },
             include: { category: true },
         });
     } catch (e) {
@@ -27,12 +37,13 @@ async function getCategories() {
 export default async function GalleryPage({
     searchParams,
 }: {
-    searchParams: Promise<{ category?: string }>;
+    searchParams: Promise<{ category?: string; search?: string }>;
 }) {
     const params = await searchParams;
     const categoryId = params.category;
+    const searchTerm = params.search;
 
-    const artworks = await getArtworks(categoryId);
+    const artworks = await getArtworks(categoryId, searchTerm);
     const categories = await getCategories();
 
     return (
@@ -54,7 +65,7 @@ export default async function GalleryPage({
                     >
                         All Works
                     </Link>
-                    {categories.map((cat) => (
+                    {categories.map((cat: any) => (
                         <Link
                             key={cat.id}
                             href={`/gallery?category=${cat.id}`}
@@ -68,7 +79,7 @@ export default async function GalleryPage({
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                    {artworks.map((art) => {
+                    {artworks.map((art: any) => {
                         let basePrice = 0;
                         try {
                             const prices = JSON.parse(art.prices || '{}');
